@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+Header{
+    padding:20px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);
+}
+div.titulos{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+h1{
+    cursor:pointer;
+}
+
+.active{
+    display: inline-block;
+
+}
+
+.desactive{
+    display: none;
+    cursor:pointer;
+}
+
+div.imagens{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.videos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+div.imagem{
+    min-width: 30vw;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin: 3%;
+}
+
+.container-sala{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vw;
+    z-index: 2000;
+    justify-content: center;
+}
+
+.modal-sala{
+    width: 70vw;
+    position: relative;
+    text-align: center;
+    height: 90vh;
+    background-color: white;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 7vh;
+    border: 10px solid rgb(130, 7, 7);
+    box-shadow: 0px 0px 0px 10px white;
+}
+
+.btn.btn-danger-modal{
+    position: absolute;
+    top: -30px;
+    color: white;
+    right: -30px;
+    border: 0px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    background-color: rgb(131, 19, 19);
+    border-radius: 50%;
+}
+
+.btn.btn-sucess-reduzir{
+    position: absolute;
+    font-size: 40px;
+    line-height: 9px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    bottom: 100px;
+    color: white;
+    background-color: green !important;
+    right: -60px;
+    border: 0px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    border-radius: 3%;
+}
+
+.btn.btn-sucess-aumentar{
+    position: absolute;
+    font-size: 40px;
+    line-height: 9px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    bottom: 150px;
+    color: white;
+    background-color: green !important;
+    right: -60px;
+    border: 0px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    border-radius: 3%;
+}
+
+.btn.btn-sucess-reduzir:hover{
+    background-color: green !important;
+}
+
+.btn.btn-danger-modal:hover{
+    background-color: white !important;
+}
+
+.video{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.divAuto{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-primary{
+    margin: 5px;
+    border-radius: 1px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redeSocial{
+    width: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
