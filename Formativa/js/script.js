@@ -54,7 +54,7 @@ for(let x = 0; x < imagens.length; x++){
         let aumenta = 0
         buttonAumenta.onclick = function(){
             divModal.setAttribute('style', `background-image: url('./Imagens/${imagens[x]}');width:${70+aumenta}vw;height:${90+aumenta}vh;`)
-            aumenta = aumenta + 1
+            aumenta = aumenta + 5
             reduz = 0
         }
         localImagens.append(divContainer)
