@@ -26,11 +26,6 @@ h1{
 
 }
 
-.desactive{
-    display: none;
-    cursor:pointer;
-}
-
 div.imagens{
     display: flex;
     flex-wrap: wrap;
@@ -41,14 +36,18 @@ div.imagens{
 }
 
 div.videos{
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-top: 30px;
 }
 
+.desactive{
+    display: none;
+    cursor:pointer;
+}
 
 div.imagem{
     min-width: 30vw;
@@ -70,16 +69,18 @@ div.imagem{
 }
 
 .modal-sala{
-    width: 70vw;
+    min-width: 65vw;
+    max-width: 75vw;
+    max-height: 85vh;
+    min-height: 65vh;
     position: relative;
     text-align: center;
-    height: 90vh;
     background-color: white;
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 7vh;
-    border: 10px solid rgb(130, 7, 7);
+    border: 10px solid rgb(3, 102, 11);
     box-shadow: 0px 0px 0px 10px white;
 }
 
@@ -91,7 +92,7 @@ div.imagem{
     border: 0px;
     font-family:sans-serif;
     font-weight: bolder;
-    background-color: rgb(131, 19, 19);
+    background-color: rgb(19, 131, 43);
     border-radius: 50%;
 }
 
@@ -158,10 +159,38 @@ div.imagem{
 footer{
     display: flex;
     justify-content: space-between;
+    padding: 50px;
+    margin-top: 50px ;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.527);
 }
 
 .redeSocial{
     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.redeSocial:hover{
+    opacity: 40%;
+}
+
+.Redes{
+    display: flex;
+    width: 33vw;
+}
+
+.Autor{
+    text-align: center;
+    width: 33vw;
+}
+
+.Direitos{
+    text-align: center;
+    height: 20px;
+    width: 33vw;
+    text-align: right;
 }
 
 ::-webkit-scrollbar{
