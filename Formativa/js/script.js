@@ -78,46 +78,47 @@ for(let x = 0; x < videos.length; x++){
     localVideo.append(div)
     div.append(video)
     let buttonPlay = document.createElement("button")
-    buttonPlay.className = 'btn btn-primary'
+    buttonPlay.className = 'btn btn-dark'
     buttonPlay.innerHTML = 'Play'
     buttonPlay.addEventListener('click', () =>{
         document.getElementById(`video${x}`).play()
     })
     let buttonPause = document.createElement("button")
-    buttonPause.className = 'btn btn-primary'
+    buttonPause.className = 'btn btn-dark'
     buttonPause.innerHTML = 'Pausar'
     buttonPause.addEventListener('click', () =>{
         document.getElementById(`video${x}`).pause()
     })
     let buttonAumentar = document.createElement("button")
-    buttonAumentar.className = 'btn btn-primary'
+    buttonAumentar.className = 'btn btn-dark'
     buttonAumentar.innerHTML = '+ Volume'
     buttonAumentar.addEventListener('click', () =>{
         document.getElementById(`video${x}`).volume += 0.1;
     }
  )
     let buttonDiminuir = document.createElement("button")
-    buttonDiminuir.className = 'btn btn-primary'
+    buttonDiminuir.className = 'btn btn-dark'
     buttonDiminuir.innerHTML = '- Volume'
     buttonDiminuir.addEventListener('click', () =>{
         document.getElementById(`video${x}`).volume -= 0.1;
     }
  )
     let buttonTelaCheia = document.createElement("button")
-    buttonTelaCheia.className = 'btn btn-primary'
+    buttonTelaCheia.className = 'btn btn-dark'
     buttonTelaCheia.innerHTML = 'Tela Cheia'
     buttonTelaCheia.addEventListener('click', () =>{
         document.getElementById(`video${x}`).requestFullscreen();
     })
     let buttonFeedback = document.createElement("button")
-    buttonFeedback.className = 'btn btn-primary'
+    buttonFeedback.className = 'btn btn-dark'
     buttonFeedback.innerHTML = 'Feedback'
     buttonFeedback.addEventListener('click', () => {
         document.getElementById("feedback").style = "display: block;"
+        document.getElementById("overlay").style = "display:flex;"
     })
 
     let buttonMudo = document.createElement("button")
-    buttonMudo.className = 'btn btn-primary'
+    buttonMudo.className = 'btn btn-dark'
     buttonMudo.innerHTML = 'Mudo'
     buttonMudo.addEventListener('click', () =>{
         document.getElementById(`video${x}`).volume = 0;
