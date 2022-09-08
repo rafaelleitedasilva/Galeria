@@ -112,10 +112,10 @@ for(let x = 0; x < videos.length; x++){
     let buttonFeedback = document.createElement("button")
     buttonFeedback.className = 'btn btn-primary'
     buttonFeedback.innerHTML = 'Feedback'
-    buttonFeedback.addEventListener('click', () =>{
-        alert(`Feedback \n Nome:${prompt()} \n Email:${prompt()}`)
-
+    buttonFeedback.addEventListener('click', () => {
+        document.getElementById("feedback").style = "display: block;"
     })
+
     let buttonMudo = document.createElement("button")
     buttonMudo.className = 'btn btn-primary'
     buttonMudo.innerHTML = 'Mudo'

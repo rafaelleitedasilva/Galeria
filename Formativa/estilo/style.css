@@ -6,6 +6,7 @@
     padding: 0;
     font-family: 'Roboto Slab', serif;
 }
+
 Header{
     padding:20px;
     margin-top: -20px;
@@ -81,7 +82,31 @@ div.imagem{
     background-repeat: no-repeat;
     margin-top: 7vh;
     border: 10px solid rgb(3, 102, 11);
+}
+
+.modal-sala-feedback{
+    display: none;
+    margin-left:41.5%;
+    margin-right: 25%;
+    width: fit-content;
+    position: fixed;
+    top: 10px;
+    text-align: center;
+    background-color: white;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    border: 1px solid rgb(3, 102, 11);
     box-shadow: 0px 0px 0px 10px white;
+}
+
+.elementos{
+    margin: 10px;
+}
+
+.elementos>input{
+    margin: 5px;
 }
 
 .btn.btn-danger-modal{
@@ -92,7 +117,7 @@ div.imagem{
     border: 0px;
     font-family:sans-serif;
     font-weight: bolder;
-    background-color: rgb(19, 131, 43);
+    background-color: rgb(3, 102, 11);
     border-radius: 50%;
 }
 
